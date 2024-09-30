@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <video id="screamer" class="none" width="640" height="360">
+        <source src="assets/screamer.mp4" type="video/mp4" />
+        Tu navegador no soporta el video.
+      </video>
+
+     
+      <div class="dealer-container">
+        <p id="mensaje-dealer"></p>
+        <img id="dealer-face" src="assets/img/smiley/1.png" alt="" />
+      </div>
+
+      <div class="form">
+        <p id="mensaje">Ingrese un numero para empezar el Juego</p>
+        <p id="mensaje-rango">
+          Rango de numeros: <span id="rango">1 -100</span>
+        </p>
+        <form>
+          <input
+            type="text"
+            id="numero-jugador"
+            placeholder="ingrese un numero"
+          />
+          <button type="button" id="nuevo-numero">Probar suerte</button>
+        </form>
+       
+      </div>
+      
+    </main>
+
+    
+
+    <script src="scrip.js"></script>
+  </body>
+</html>

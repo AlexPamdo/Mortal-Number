@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-image: url(assets/Mesa.png);
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+
+    width: 100vw; /* 100% del ancho de la ventana */
+    height: 100vh; /* 100% de la altura de la ventana */
+}
+
+@keyframes movimiento-break {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px); /* Mueve la imagen 10 píxeles a la derecha */
+       
+    }
+    100% {
+        transform: translateY(0);
+       
+    }
+}
+
+#mensaje-dealer{
+    text-align: center;
+}
+
+.form{
+    background-color: rgba(0, 0, 0, 0.555);
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.dealer-container{
+    margin: 10%;
+    max-width: 50%;
+    max-height: 40%;
+}
+
+.dealer-container img{
+    height: 100%;
+    width: 100%;
+    animation: movimiento-break 1s ease-in-out infinite;
+}
+
+
+
+#mensaje, #mensaje-dealer, #mensaje-rango{
+    color: #ffffff;
+}
+
+#screamer{
+   
+    position: fixed; /* Fija el video en la ventana */
+    top: 0; /* Coloca el video en la parte superior */
+    left: 0; /* Coloca el video en la parte izquierda */
+    width: 100vw; /* Ancho del 100% de la ventana */
+    height: 100vh; /* Altura del 100% de la ventana */
+    object-fit: cover; /* Asegura que el video cubra todo el espacio sin deformarse */
+    z-index: 10; /* Asegura que esté delante de otros elementos */
+}
+
+.none{
+    display: none;
+}
